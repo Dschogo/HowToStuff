@@ -1,0 +1,2 @@
+* [Home](/)
+* [Voicemeeter](index.md)
