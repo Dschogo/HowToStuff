@@ -64,3 +64,5 @@ All done, you should now be able to stream from anywhere in the world.
 Only contra: your pc has to be on during that time.
 
 > -> Enjoy streaming from where ever you are without worring about disconnects etc
+
+Want to know more coll stuff related? [https://obsproject.com/wiki/Streaming-With-SRT-Or-RIST-Protocols](https://obsproject.com/wiki/Streaming-With-SRT-Or-RIST-Protocols)

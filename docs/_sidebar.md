@@ -1,6 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-
 - [Home](/Home/index.md)
 - [OBS](/OBS/index.md)
   - [OBS IRL streaming](/OBS/irl.md)
