@@ -7,7 +7,7 @@ This page will try to give you some tips and tricks to get the best out of your 
 
 ## Required Hardware
 
-- A phone with a (good) camera, inbuild mic, or external mic(aux/bluetooth). (USB cams are experimental on Android)
+- A phone with a (good) camera, in build mic, or external mic(aux/bluetooth). (USB cams are experimental on Android)
 - A stationary PC at home with enough upload and download speed to stream. (any semi modern laptop will do probably)
 - A bit of time to set it up.
 
@@ -15,36 +15,35 @@ This page will try to give you some tips and tricks to get the best out of your 
 
 1. Download OBS for your PC install it, set it up for streaming to your favorite platform.
 2. Install the Websocket plugin for OBS.
-   1. Configure a password/user aswell as a random port (everything in the 4 and 5 digits should be free).
+   1. Configure a password/user as well as a random port (everything in the 4 and 5 digits should be free).
 3. Add a media source (name it whatever you want)
-   1. ![](/img/ms1.png)
-   2. ![](/img/ms3.png)
+   1. ![img](/img/ms1.png)
+   2. ![img](/img/ms3.png)
       I've used Port 22222 in this example
 4. Download "Larix Broadcaster" for your phone.
    1. Add a new server in the settings under connections.
       1. name can be anything, URL hast to be srt://IPOFYOURPC:PORT (PORT=22222 in this example)
-      2. Delay can be lower than 2000ms, but mobile networks arent that reliable, so I'd recommend 2000ms maybe 8000ms.
+      2. Delay can be lower than 2000ms, but mobile networks aren't that reliable, so I'd recommend 2000ms.
    2. Adjust the video settings to your liking
-      1. 1080p 30fps is a good for IRL, variable bitrate of 4kb/s, Format HEVC if available)
+      1. 1080p 30fps is good for IRL, variable bitrate of 4kb/s, Format HEVC if available)
       2. Setup up mic settings etc
    3. Go back to the main screen and press the "Shutter" button.
       1. After a few seconds the video feed should be visible in your OBS
 
 ## Making it work from outside your home
 
-
 1. Setup port forwarding on your router to forward the port you've chosen above to your PC running OBS.
 2. Also make the port open for your OBS websocket (You can use for example OBS Blade on your phone to control OBS remotely)
 
-!> **Warning  
-OPENING PORTS IS A POTENTIAL SECURITY RISK, MAKE SURE YOU KNOW WHAT YOU ARE DOING AND THAT YOU HAVE A SECURE PASSWORD FOR YOUR WEBSOCKET. ONLY LEAVE IT OPEN AS LONG AS YOU NEED IT. DONT TELL ANYONE THE PORT NUMBERS, JUST TO BE SAFE. YOU HAVE BEEN WARNED.**
+   !> **Warning  
+   OPENING PORTS IS A POTENTIAL SECURITY RISK, MAKE SURE YOU KNOW WHAT YOU ARE DOING AND THAT YOU HAVE A SECURE PASSWORD FOR YOUR WEBSOCKET. ONLY LEAVE IT OPEN AS LONG AS YOU NEED IT. DON'T TELL ANYONE THE PORT NUMBERS, JUST TO BE SAFE. ANYONE WITH THE PORT AND PASSWORD OF YOUR WEBSOCKET CAN START STREAMING. YOU HAVE BEEN WARNED.**
 
 3. Setup a Dynamic DNS service, so you have a static URL to connect to.
    1. I recommend noip.com - its free and easy to use.
    2. Create an account, add a new Domain and follow the instructions.
    3. Download the client and install it on your PC.
-   4. Select your configured domain
-      1. Now the Dynamic DNS service Domain should always resolve in your public home adress
+   4. Select your configured domain in the client
+      1. Now the Dynamic DNS service Domain should always resolve in your public home address
 4. Adjust the IP in your Larix Broadcaster APP to your created DOMAIN.
 
 All done, you should now be able to stream from anywhere in the world.
@@ -53,7 +52,7 @@ All done, you should now be able to stream from anywhere in the world.
 
 - auto scene switcher by [Loopy SRT Stats Monitor](https://github.com/loopy750/SRT-Stats-Monitor)
   - Just watch his tutorial its fairly easy to follow
-- you can minimize the larix app to open a chat app on the same device (on android you can multi window the apps or use a floating window app)
+- you can minimize the Larix app to open a chat app on the same device (on android you can multi window the apps or use a floating window app)
 
 ## Pros of this setup instead of streaming directly from your phone
 

@@ -10,13 +10,13 @@ Okay first, what does Twitch recommend? [reference](https://stream.twitch.tv/enc
 
 > For 1080p60:
 >
-> |  | NVENC | x264  |
-| ------------ | ------------ | ------------ |
-| Bitrare | cbr 6000 kbps  | cbr  6000 kbps  |
-| preset: | Quality  | veryfast <-> medium |
-| Profile | NaN | Main/High |
+> |         | NVENC         | x264                |
+> | ------- | ------------- | ------------------- |
+> | Bitrare | cbr 6000 kbps | cbr 6000 kbps       |
+> | preset: | Quality       | veryfast <-> medium |
+> | Profile | NaN           | Main/High           |
 
-<sub>*Nvenc = NVIDIA accelerated encoding on GPU | x264 = software encoding (CPU)</sub>
+<sub>\*Nvenc = NVIDIA accelerated encoding on GPU | x264 = software encoding (CPU)</sub>
 
 It's 2022 so im not gonna really bother testing lower resolutions, but it should mostly match the upcoming outcome.
 
@@ -26,8 +26,8 @@ Since the image quality is pretty close and we as humans cant watch to videos si
 
 As Software tool I came across [VMAF](https://github.com/Netflix/vmaf) (Video Multimethod Assessment Fusion), made by Netflix. It tries to measure the perceptual video quality by comparing it to a reference video. The maintainers of the GitHub repo were kind and linked a functional GUI by fifonik called [FFMetrics](https://github.com/Netflix/vmaf).
 
-<sub>*before using FFMetrics you have to install ffmpeg and add it to your Path</sub>
-<sub>**I've used 1.3.1 beta 2 for this test.</sub>
+<sub>\*before using FFMetrics you have to install ffmpeg and add it to your Path</sub>
+<sub>\*\*I've used 1.3.1 beta 2 for this test.</sub>
 
 1. ### We need a reference video
 
@@ -38,14 +38,15 @@ As Software tool I came across [VMAF](https://github.com/Netflix/vmaf) (Video Mu
     Im using Adobe MediaEncoder (2022) for this, with the [voukoder](https://www.voukoder.org/forum/thread/783-downloads-instructions/) plugin. Any other software with NVENC support should work as well. (Handbrake, or bare bones ffmpeg works)
 
     Encoder set to CBR 6kb/s presets visible in name.  
-    Note: X264 tries to break out of the 6kb/s limit (not sure why, 7kb/s would be still fine for twitch, and in real world bitrate will vary a bit anyway), just to keep a little in mind when comparing the results.  
+    Note: X264 tries to break out of the 6kb/s limit (not sure why, 7kb/s would be still fine for twitch, and in real world bitrate will vary a bit anyway), just to keep a little in mind when comparing the results.
 
     To optimize NVENC I've used following:
+
     > b=6000000 b_adapt=1 bf=2 nonref_p=1 preset=p7 profile=high rc=cbr spatial-aq=1 temporal-aq=1
 
 !> Following voukoder settings are found like that in obs:  
 b = bitrate | b_adapt = Look-ahead | bf = Max B-frames | preset = p7 equals"Max quality" | profile = profile | rc = rate control | spatial-aq and temporal-aq = are both under "Psycho Visual Tuning"
-    <sub>*kb/s are average over the whole 20 seconds</sub>
+<sub>\*kb/s are average over the whole 20 seconds</sub>
 
 ## Results
 
@@ -80,8 +81,6 @@ Additionally avoid the faster presets, because they vary from frame to frame wit
 ## Hold up - there is AV1 coming????
 
 Yes, but you can completely forget software encoding - for the same quality of x264 you need at least 5 times the render time. Intel Arc and the GeForce 4000 and probably upwards cards support AV1 hardware encoding, but none of the streaming providers support it yet. There is barely support for decoding (RTX 3000 supports its).
-
-Surprisingly almost all smartphone support AV1 decoding, and also encoding. Very good for IRL-livestreaming with low bandwidth - Another topic.
 
 ## And What about the framerate?
 
