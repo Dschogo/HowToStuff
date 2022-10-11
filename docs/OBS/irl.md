@@ -35,10 +35,9 @@ This page will try to give you some tips and tricks to get the best out of your 
 1. Setup port forwarding on your router to forward the port you've chosen above to your PC running OBS.
 2. Also make the port open for your OBS websocket (You can use for example OBS Blade on your phone to control OBS remotely)
 
-
 !!! Danger
 
-   OPENING PORTS IS A POTENTIAL SECURITY RISK, MAKE SURE YOU KNOW WHAT YOU ARE DOING AND THAT YOU HAVE A SECURE PASSWORD FOR YOUR WEBSOCKET. ONLY LEAVE IT OPEN AS LONG AS YOU NEED IT. DON'T TELL ANYONE THE PORT NUMBERS, JUST TO BE SAFE. ANYONE WITH THE PORT AND PASSWORD OF YOUR WEBSOCKET CAN START STREAMING. YOU HAVE BEEN WARNED.**
+    OPENING PORTS IS A POTENTIAL SECURITY RISK, MAKE SURE YOU KNOW WHAT YOU ARE DOING AND THAT YOU HAVE A SECURE PASSWORD FOR YOUR WEBSOCKET. ONLY LEAVE IT OPEN AS LONG AS YOU NEED IT. DON'T TELL ANYONE THE PORT NUMBERS, JUST TO BE SAFE. ANYONE WITH THE PORT AND PASSWORD OF YOUR WEBSOCKET CAN START STREAMING. YOU HAVE BEEN WARNED.
 
 1. Setup a Dynamic DNS service, so you have a static URL to connect to.
    1. I recommend noip.com - its free and easy to use.
@@ -52,9 +51,13 @@ All done, you should now be able to stream from anywhere in the world.
 
 ## Cool stuff
 
-- auto scene switcher by [Loopy SRT Stats Monitor](https://github.com/loopy750/SRT-Stats-Monitor)
+- auto scene switcher: [Loopy SRT Stats Monitor](https://github.com/loopy750/SRT-Stats-Monitor)
   - Just watch his tutorial its fairly easy to follow
 - you can minimize the Larix app to open a chat app on the same device (on android you can multi window the apps or use a floating window app)
+
+??? note
+    You can also create an overlay inside the Larix app, and set it to preview only. As url use the direct one from twitch popout chat, or JChat. Additionally you have to enable stream and record mirrored video for the selfie cam, so it doesn't flip the overlay.
+
 
 ## Pros of this setup instead of streaming directly from your phone
 

@@ -8,13 +8,11 @@ If you found that page, its more or less clear that you already know about OBS a
 
 Okay first, what does Twitch recommend? [reference](https://stream.twitch.tv/encoding/)
 
-> For 1080p60:
->
-> |         | NVENC         | x264                |
-> | ------- | ------------- | ------------------- |
-> | Bitrare | cbr 6000 kbps | cbr 6000 kbps       |
-> | preset: | Quality       | veryfast <-> medium |
-> | Profile | NaN           | Main/High           |
+| 1080p60 | NVENC         | x264                |
+| ------- | ------------- | ------------------- |
+| Bitrare | cbr 6000 kbps | cbr 6000 kbps       |
+| preset: | Quality       | veryfast <-> medium |
+| Profile | NaN           | Main/High           |
 
 <sub>\*Nvenc = NVIDIA accelerated encoding on GPU | x264 = software encoding (CPU)</sub>
 
@@ -44,8 +42,9 @@ As Software tool I came across [VMAF](https://github.com/Netflix/vmaf) (Video Mu
 
     > b=6000000 b_adapt=1 bf=2 nonref_p=1 preset=p7 profile=high rc=cbr spatial-aq=1 temporal-aq=1
 
-!> Following voukoder settings are found like that in obs:  
-b = bitrate | b_adapt = Look-ahead | bf = Max B-frames | preset = p7 equals"Max quality" | profile = profile | rc = rate control | spatial-aq and temporal-aq = are both under "Psycho Visual Tuning"
+??? info "voukoder/ffmpeg settings mapped to obs"
+    b = bitrate | b_adapt = Look-ahead | bf = Max B-frames | preset = p7 equals"Max quality" | profile = profile | rc = rate control | spatial-aq and temporal-aq = are both under "Psycho Visual Tuning"
+
 <sub>\*kb/s are average over the whole 20 seconds</sub>
 
 ## Results

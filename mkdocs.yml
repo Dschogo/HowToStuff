@@ -31,6 +31,7 @@ markdown_extensions:
           smart_enable: all
     - pymdownx.caret
     - pymdownx.details
+    - pymdownx.superfences
     - pymdownx.highlight:
           anchor_linenums: true
     - pymdownx.inlinehilite
@@ -70,4 +71,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/Dschogo
+  analytics:
+    provider: google
+    property: G-WPH3YEW49B
+
 copyright: Copyright &copy; 2022 Dschogo
