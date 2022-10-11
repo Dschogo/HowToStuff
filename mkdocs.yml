@@ -1,4 +1,7 @@
 site_name: HowToStuff
+repo_name: dschogo/HowToStuff
+repo_url: https://github.com/Dschogo/HowToStuff
+
 theme:
     name: material
     features:
@@ -28,6 +31,7 @@ theme:
     font:
         text: Roboto
         code: Roboto Mono
+    custom_dir: overrides
 
 markdown_extensions:
     - abbr
