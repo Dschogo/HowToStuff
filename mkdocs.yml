@@ -9,6 +9,8 @@ theme:
         - search.highlight
         - search.share
         - search.suggest
+        - navigation.top
+        - navigation.expand
     icon:
         repo: fontawesome/brands/github
         edit: material/file-document-edit-outline
@@ -66,7 +68,9 @@ markdown_extensions:
 
 plugins:
     - search
-    - awesome-pages
+    - awesome-pages:
+          filename: .pages.yml
+    - pagenav-generator
     - git-revision-date-localized:
           enable_creation_date: true
           type: timeago
