@@ -1,6 +1,7 @@
 site_name: HowToStuff
 repo_name: dschogo/HowToStuff
 repo_url: https://github.com/Dschogo/HowToStuff
+site_url: https://dschogo.github.io/HowToStuff
 
 theme:
     name: material
