@@ -1,6 +1,14 @@
 site_name: HowToStuff
 theme:
     name: material
+    features:
+        - navigation.instant
+        - navigation.tabs
+        - navigation.indexes
+        - toc.follow
+        - search.highlight
+        - search.share
+        - search.suggest
     icon:
         repo: fontawesome/brands/github
         edit: material/file-document-edit-outline
@@ -15,6 +23,9 @@ theme:
           toggle:
               icon: material/lightbulb-outline
               name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
 
 markdown_extensions:
     - abbr
@@ -49,11 +60,16 @@ markdown_extensions:
           custom_checkbox: true
     - pymdownx.tilde
     - tables
+    - pymdownx.emoji:
+        emoji_index: !!python/name:materialx.emoji.twemoji
+        emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
     - search
+    - awesome-pages
     - git-revision-date-localized:
           enable_creation_date: true
+          type: timeago
     - glightbox:
           touchNavigation: true
           loop: false
@@ -64,15 +80,16 @@ plugins:
           draggable: true
           auto_caption: false
           caption_position: bottom
-
+    - minify:
+          minify_html: true
 
 extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/Dschogo
-  analytics:
-    provider: google
-    property: G-WPH3YEW49B
+    generator: false
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/Dschogo
+    analytics:
+        provider: google
+        property: G-WPH3YEW49B
 
 copyright: Copyright &copy; 2022 Dschogo

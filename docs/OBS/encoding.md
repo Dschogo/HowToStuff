@@ -1,4 +1,4 @@
-# OBS - encoding comparison
+# Encoder comparison
 
 ---
 

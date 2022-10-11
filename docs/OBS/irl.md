@@ -1,4 +1,4 @@
-# OBS - IRL streaming
+# IRL streaming
 
 ---
 
