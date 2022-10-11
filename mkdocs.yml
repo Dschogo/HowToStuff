@@ -1,3 +1,73 @@
 site_name: HowToStuff
 theme:
-  name: material
+    name: material
+    icon:
+        repo: fontawesome/brands/github
+        edit: material/file-document-edit-outline
+    palette:
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          toggle:
+              icon: material/lightbulb
+              name: Switch to dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          toggle:
+              icon: material/lightbulb-outline
+              name: Switch to light mode
+
+markdown_extensions:
+    - abbr
+    - admonition
+    - attr_list
+    - def_list
+    - footnotes
+    - md_in_html
+    - toc:
+          permalink: "#"
+    - pymdownx.arithmatex:
+          generic: true
+    - pymdownx.betterem:
+          smart_enable: all
+    - pymdownx.caret
+    - pymdownx.details
+    - pymdownx.highlight:
+          anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink:
+          repo_url_shorthand: true
+          user: "invoke-ai"
+          repo: "InvokeAI"
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.snippets
+    - pymdownx.tabbed:
+          alternate_style: true
+    - pymdownx.tasklist:
+          custom_checkbox: true
+    - pymdownx.tilde
+    - tables
+
+plugins:
+    - search
+    - git-revision-date-localized:
+          enable_creation_date: true
+    - glightbox:
+          touchNavigation: true
+          loop: false
+          effect: zoom
+          width: 100%
+          height: auto
+          zoomable: true
+          draggable: true
+          auto_caption: false
+          caption_position: bottom
+
+
+extra:
+  generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Dschogo
+copyright: Copyright &copy; 2022 Dschogo

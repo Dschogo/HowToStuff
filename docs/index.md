@@ -1,17 +1,9 @@
-# Welcome to MkDocs
+# Im Dschogo and im doing tech
+---
+# Wat iz dis?
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Well this is just a little site I wrote in my spare time to hopefully help other people with various things. I'm not a professional programmer or anything, I just like to tinker with things and learn new things. I'm not a professional writer either, so I apologize for any spelling or grammar mistakes. If you find any mistakes/improvements, write an git isse here -> [click me](https://github.com/Dschogo/HowToStuff/issues)
 
-## Commands
+# What can I find here?
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+More or less anything, see for yourself, in the sidebar.
