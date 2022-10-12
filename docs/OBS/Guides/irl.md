@@ -58,7 +58,6 @@ All done, you should now be able to stream from anywhere in the world.
 ??? note
     You can also create an overlay inside the Larix app, and set it to preview only. As url use the direct one from twitch popout chat, or JChat. Additionally you have to enable stream and record mirrored video for the selfie cam, so it doesn't flip the overlay.
 
-
 ## Pros of this setup instead of streaming directly from your phone
 
 - your phone has only to encode your camera and audio, not all overlays etc -> longer battery life

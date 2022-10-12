@@ -4,10 +4,9 @@
 
 Basically every file, has the creation date baked into the file itself. With this information a gallery for example can order Images based on "taken" dat, even if the file name has nothing to do with the date. Whatsapp-backups just backup the file WITHOUT the exif, why? I don't know, these few bytes wouldn't hurt anyone. Maybe you restored a Whatsapp-backup   one day, and noticed that all Images from Whatsapp got created today, and therefore the Gallery is totally fucked up. Luckily whatsapp names the images and videos based on the creation date, so we can just add the exif data back in, with a simple script.
 
-
 ## The script
 
-What does it do excactly? It goes through every image in the "process_images" folder, and adds the exif data back to it. If multiple files got the same date, an incrementing counter will be added to the filename. 
+What does it do excactly? It goes through every image in the "process_images" folder, and adds the exif data back to it. If multiple files got the same date, an incrementing counter will be added to the filename.
 To use it, you can either map the working folder to the actual image/video/media folder on you connected phone, or copy the files onto the computer, and then run the script, and copy them back. That way you also have an backup of the original files incase something goes wrong. (The online Backup could become unusable, if it automatically backs up during the process)
 
 ``` py title="whatsappexiffixer.py"
@@ -73,5 +72,5 @@ print("\nErroes:" + str(errors_count) + "!")
 print(f"\n{errors_names}")
 ```
 
-!!! danger 
+!!! danger
     This script worked for me a few months ago, maybe stuff has changed since then. So as always, it comes as is and always read code you found online before you run it. Im not responsible for any damage this script might cause.

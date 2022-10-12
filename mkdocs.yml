@@ -1,7 +1,8 @@
 site_name: HowToStuff
 repo_name: dschogo/HowToStuff
 repo_url: https://github.com/Dschogo/HowToStuff
-site_url: https://dschogo.github.io/HowToStuff
+site_url: https://dschogo.github.io/HowToStuff/
+edit_uri: ""
 
 theme:
     name: material
@@ -11,6 +12,7 @@ theme:
         - navigation.indexes
         - toc.follow
         - search.highlight
+        - navigation.tracking
         - search.share
         - search.suggest
         - navigation.top
@@ -68,8 +70,8 @@ markdown_extensions:
     - pymdownx.tilde
     - tables
     - pymdownx.emoji:
-        emoji_index: !!python/name:materialx.emoji.twemoji
-        emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
     - search
@@ -93,7 +95,6 @@ plugins:
           minify_html: true
 
 extra:
-    generator: false
     social:
         - icon: fontawesome/brands/github
           link: https://github.com/Dschogo
