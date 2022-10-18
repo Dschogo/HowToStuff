@@ -1,4 +1,5 @@
 .venv/*
 .env
+.cache/*
 site/*
 HowToStuff.code-workspace
