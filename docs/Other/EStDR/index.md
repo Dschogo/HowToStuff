@@ -27,9 +27,13 @@ Now you can run the `ws.py` file. Its still a lillte buggy, maybe you have to go
 
 Go to any Track page or playlist/album page on Epidemic Sound and click the EStDR icon in your browser. IT will download all Tracks into the folder and imports them into the mediapool.
 
+!!!info
+    You can also rightlick a track link, to only download that one.
 
 ## Planned features
 
 - [ ] some sort settings - ui? - in the browser/external window?
 - [ ] directly import into timeline?
 - [ ] Better docs -> short gif?
+- [ ] Better error handling
+- [ ] Auto updates
