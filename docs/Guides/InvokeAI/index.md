@@ -89,7 +89,6 @@ Output directory will be `output\img-samples`
 To update InvokeAI, just download the new release and overwrite the files and repeat the steps [5](#5-install-the-requirements) and [7](#7-preload-the-modles).
 Or you can just use the `git pull` command.
 
-
 ## Notes
 
 This setup is now fully portable, you can move the InvokeAI folder to another drive or even another computer and it will work.
