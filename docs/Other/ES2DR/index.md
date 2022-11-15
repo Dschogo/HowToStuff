@@ -11,7 +11,7 @@ Its a simple tool (Direfox Extension + Python middle man) that allows you to imp
 
 - Go to the release pager: [releases page](https://github.com/Dschogo/ES2DR/releases)
 - Click on the .xdi file
-  - Firefox will promt you to install the extension
+    - Firefox will promt you to install the extension
 
 Now download the `server.zip` from the same page and extract it somewhere.
 
