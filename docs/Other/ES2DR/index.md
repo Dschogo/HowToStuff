@@ -9,8 +9,8 @@ Its a simple tool (Direfox Extension + Python middle man) that allows you to imp
 
 ## How to install it?
 
-Download the latest release from the [releases page](https://github.com/Dschogo/EStDR/releases).
-You only need the `EStDR.xdi` for now.
+Download the latest release from the [releases page](https://github.com/Dschogo/ES2DR/releases).
+You only need the `ES2DR.xdi` for now.
 Simply drag and drop it onto your browser and it will prompt you to install it.
 
 Now download the `server.zip` from the same page and extract it somewhere.
