@@ -1,6 +1,6 @@
-# EStDR - Epidemic Sound to DaVinci Resolve
+# ES2DR - Epidemic Sound to DaVinci Resolve
 
-## What is EStDR?
+## What is ES2DR?
 
 Its a simple tool (Direfox Extension + Python middle man) that allows you to import Epidemic Sound tracks direclty into DaVinci Resolve + saves them into a folder of your choice.
 
