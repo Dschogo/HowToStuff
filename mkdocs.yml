@@ -20,7 +20,7 @@ theme:
         - search.share
         - search.suggest
         - navigation.top
-        # - navigation.expand
+        - navigation.expand
         # - navigation.sections
     icon:
         repo: fontawesome/brands/github
@@ -62,10 +62,6 @@ markdown_extensions:
           anchor_linenums: true
     - pymdownx.inlinehilite
     - pymdownx.keys
-    - pymdownx.magiclink:
-          repo_url_shorthand: true
-          user: "invoke-ai"
-          repo: "InvokeAI"
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.snippets
@@ -94,9 +90,9 @@ plugins:
           loop: false
           effect: zoom
           width: 100%
-          height: auto
+          height: 100%
           zoomable: true
-          draggable: true
+          draggable: false
           auto_caption: false
           caption_position: bottom
     - minify:
