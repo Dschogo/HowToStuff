@@ -1,4 +1,4 @@
-# Davinci Resolve Plugins
+# Plugins
 
 All plugins are available for free, and unlocked - means you can directly edit the effect/generator inside fusion.
 
@@ -17,7 +17,7 @@ Supported formats:
 Additionally, you can set the start offset, framerate will be automatically detected (CompFramerate), and it can strip leading zeros.
 For more Advanced Text+ options, just open it in fusion, and edit the text+ node.
 
-<sup>Core logic is written in LUA (Text+ Textfield expression)</sup>
+<sup>Core logic is written in LUA (Text+ Textfield expression) incase you want to edit the format or see how it works</sup>
 
 [DCounter.drfx](plugins/DCounter.drfx)
 
