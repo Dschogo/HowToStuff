@@ -6,8 +6,6 @@ edit_uri: ""
 
 site_description: Docs for various stuff by Dschogo
 
-
-
 theme:
     name: material
     features:
@@ -77,7 +75,7 @@ markdown_extensions:
 
 plugins:
     - social:
-        cards: true
+          cards: true
     - search
     - awesome-pages:
           filename: .pages.yml
@@ -85,6 +83,7 @@ plugins:
     - git-revision-date-localized:
           enable_creation_date: true
           type: timeago
+          
     - glightbox:
           touchNavigation: true
           loop: false
@@ -97,6 +96,10 @@ plugins:
           caption_position: bottom
     - minify:
           minify_html: true
+#     - gen-files:
+#           scripts:
+#               - gen_pages.py
+
 
 extra:
     social:
