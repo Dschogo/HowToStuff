@@ -19,7 +19,7 @@ For more Advanced Text+ options, just open it in fusion, and edit the text+ node
 
 <sup>Core logic is written in LUA (Text+ Textfield expression) incase you want to edit the format or see how it works</sup>
 
-[DCounter.drfx](plugins/DCounter.drfx)
+[DCounter.drfx](data/DCounter.drfx)
 
 ## WIP
 
