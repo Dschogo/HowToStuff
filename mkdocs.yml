@@ -6,8 +6,6 @@ edit_uri: ""
 
 site_description: Docs for various stuff by Dschogo
 
-
-
 theme:
     name: material
     features:
@@ -20,7 +18,7 @@ theme:
         - search.share
         - search.suggest
         - navigation.top
-        # - navigation.expand
+        - navigation.expand
         # - navigation.sections
     icon:
         repo: fontawesome/brands/github
@@ -62,10 +60,6 @@ markdown_extensions:
           anchor_linenums: true
     - pymdownx.inlinehilite
     - pymdownx.keys
-    - pymdownx.magiclink:
-          repo_url_shorthand: true
-          user: "invoke-ai"
-          repo: "InvokeAI"
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.snippets
@@ -81,7 +75,7 @@ markdown_extensions:
 
 plugins:
     - social:
-        cards: true
+          cards: true
     - search
     - awesome-pages:
           filename: .pages.yml
@@ -89,18 +83,23 @@ plugins:
     - git-revision-date-localized:
           enable_creation_date: true
           type: timeago
+          
     - glightbox:
           touchNavigation: true
           loop: false
           effect: zoom
           width: 100%
-          height: auto
+          height: 100%
           zoomable: true
-          draggable: true
+          draggable: false
           auto_caption: false
           caption_position: bottom
     - minify:
           minify_html: true
+#     - gen-files:
+#           scripts:
+#               - gen_pages.py
+
 
 extra:
     social:
@@ -123,4 +122,4 @@ extra:
                   note: >-
                       Thanks for your feedback!
 
-copyright: Copyright &copy; 2022 Dschogo
+copyright: Copyright &copy; 2023 Dschogo

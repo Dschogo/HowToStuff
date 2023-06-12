@@ -1,6 +1,6 @@
-# EStDR - Epidemic Sound to DaVinci Resolve
+# ES2DR - Epidemic Sound to DaVinci Resolve
 
-## What is EStDR?
+## What is ES2DR?
 
 Its a simple tool (Direfox Extension + Python middle man) that allows you to import Epidemic Sound tracks direclty into DaVinci Resolve + saves them into a folder of your choice.
 
@@ -9,9 +9,9 @@ Its a simple tool (Direfox Extension + Python middle man) that allows you to imp
 
 ## How to install it?
 
-Download the latest release from the [releases page](https://github.com/Dschogo/EStDR/releases).
-You only need the `EStDR.xdi` for now.
-Simply drag and drop it onto your browser and it will prompt you to install it.
+- Go to the release pager: [releases page](https://github.com/Dschogo/ES2DR/releases)
+- Click on the .xdi file
+    - Firefox will promt you to install the extension
 
 Now download the `server.zip` from the same page and extract it somewhere.
 
@@ -22,6 +22,7 @@ Before running the server, you need to edit the `ws.py` file. (Will be changed i
 Open the file and change the `path` variable to the path of the desired folder where the tracks should be saved. (Like an audio database - the files will remain after closing the script/davinci/project)
 
 Now you can run the `ws.py` file. Its still a lillte buggy, maybe you have to go to the Firefox extention settings and restart it, to make it connect. (Or click a few times the extention icon to start downloading, it should try to reconnect and start downloading/importing)
+If you are on windows the start.bat will start the server. You cann create a shortcut to it and put it on your desktop.
 
 ## How to use it?
 
